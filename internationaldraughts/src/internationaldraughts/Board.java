@@ -31,24 +31,22 @@ import javax.swing.JSlider;
 /**
  * Board (main)
  * 
- * JFrame with at board (10x10), on which all games are played, in the center.
- * The colors are of int: WHITE (0) and BLACK (1).
+ * JFrame with board (10x10) in the center.
  * 
- * Board (JPanel) has 50 dark tiles (rectangles) on a light background.
+ * Board (JPanel) has 50 dark tiles (rectangles).
  * When the board is sized the tiles and piece images are also sized (x and y (static)).
- * static paintTile paints a filled tile (board or game).
+ * static paintTile paints a tile (board or game).
  * 
  * main handles the setup and layout of the frame.
  * 
  * the menubar contains 2 menus:
- * 1: Game -> new game white or black
+ * 1: Game -> white or black
  * 2: AI -> level 1-5 -> 1 level = 2 moves
  * 
  * Extra option are:
- * -ARROW -> undo move
- * -WINNER -> winning color at end of game
- -MOVEABLE -> moveable pieces (orange)
- * -rotate -> rotate the board
+ * -undo move
+ * -color moveable pieces (orange)
+ * -rotate board
  * 
  * @author Naardeze
  */
@@ -220,3 +218,4 @@ class Board extends JPanel implements ActionListener {
     }
     
 }
+
